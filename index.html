@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#02050b">
+    <title>2006 Visuals, Modern Edge Engine: Architecture and Technology of The Reverse Emo Changeling</title>
+    
+    <!-- Canonical and Alternate Language Links -->
+    <link rel="canonical" href="https://github.emo-changeling.xyz/">
+    <link rel="alternate" hreflang="en" href="https://github.emo-changeling.xyz/">
+    <link rel="alternate" hreflang="pl" href="https://github.emo-changeling.xyz/pl.html">
+    <link rel="alternate" hreflang="x-default" href="https://github.emo-changeling.xyz/">
+    
+    <!-- Machine-Readable Metadata Discovery -->
+    <link rel="alternate" type="text/plain" href="https://github.emo-changeling.xyz/llms.txt" title="LLM Architecture Documentation">
+    <link rel="ai-catalog" type="application/json" href="https://github.emo-changeling.xyz/.well-known/ai-catalog.json" title="Agent Resource Discovery Catalog">
+    <link rel="alternate" type="application/rss+xml" href="https://reverse.emo-changeling.xyz/rss.xml" title="The Reverse Emo Changeling Full-Text RSS Feed">
+
+    <meta name="description" content="Technical architecture, philosophy, and edge infrastructure of The Reverse Emo Changeling. Zero-bloat static architecture pairing mid-2000s subcultural aesthetics with high performance.">
+    <meta name="keywords" content="The Reverse Emo Changeling, architecture, edge computing, static site, modern myspace, zero tracking, equal access, semantic web, json-ld">
+    <meta name="author" content="The Reverse Emo Changeling">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="2006 Visuals, Modern Edge Engine: Architecture and Technology of The Reverse Emo Changeling">
+    <meta property="og:description" content="Technical one-pager and architecture hub of the decentralized The Reverse Emo Changeling ecosystem.">
+    <meta property="og:url" content="https://github.emo-changeling.xyz/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="The Reverse Emo Changeling">
+    
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="2006 Visuals, Modern Edge Engine: The Reverse Emo Changeling Architecture">
+    <meta name="twitter:description" content="Zero-framework, privacy-first, decentralized static architecture.">
+
+    <!-- Modular Stylesheet (Zero external CDNs or font calls) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org JSON-LD Machine Graph -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Organization", "NewsMediaOrganization"],
+          "@id": "https://emo-changeling.xyz/#organization",
+          "name": "The Reverse Emo Changeling",
+          "alternateName": ["The Reverse Emo Changeling Project", "Emo-Changeling"],
+          "url": "https://emo-changeling.xyz/",
+          "sameAs": [
+            "https://github.com/The-Reverse-Emo-Changeling",
+            "https://github.emo-changeling.xyz/",
+            "https://reverse.emo-changeling.xyz/",
+            "https://hub.emo-changeling.xyz/",
+            "https://gallery.emo-changeling.xyz/",
+            "https://wiki.emo-changeling.xyz/",
+            "https://yt.emo-changeling.xyz",
+            "https://www.youtube.com/channel/UCMemy-J_OGGnai-9sOWTKXg",
+            "https://te.emo-changeling.xyz",
+            "https://t.me/emochangeling",
+            "https://insta.emo-changeling.xyz",
+            "https://www.instagram.com/thereverseemochangeling/",
+            "https://tt.emo-changeling.xyz",
+            "https://www.tiktok.com/@reverse.changeling",
+            "https://deviantart.emo-changeling.xyz",
+            "https://www.deviantart.com/vikasiek"
+          ],
+          "publishingPrinciples": "https://reverse.emo-changeling.xyz/pl/manifesto/",
+          "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://toxic-echo.studio/#organization",
+            "name": "Toxic Echo Studio",
+            "url": "https://toxic-echo.studio/"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://github.emo-changeling.xyz/#website",
+          "url": "https://github.emo-changeling.xyz/",
+          "name": "The Reverse Emo Changeling - Architecture Hub",
+          "description": "Technical repository and architectural documentation hub for The Reverse Emo Changeling.",
+          "publisher": {
+            "@id": "https://emo-changeling.xyz/#organization"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "TechArticle",
+          "@id": "https://github.emo-changeling.xyz/#tech-article",
+          "url": "https://github.emo-changeling.xyz/",
+          "name": "2006 Visuals, Modern Edge Engine: Architecture and Technology of The Reverse Emo Changeling",
+          "headline": "2006 Visuals, Modern Edge Engine: Architecture and Technology of The Reverse Emo Changeling",
+          "description": "Technical architectural overview of The Reverse Emo Changeling ecosystem, focusing on static edge resilience, zero bloat, human-AI data parity, and privacy.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://github.emo-changeling.xyz/#website"
+          },
+          "publisher": {
+            "@id": "https://emo-changeling.xyz/#organization"
+          },
+          "about": {
+            "@id": "https://emo-changeling.xyz/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Top Navigation Bar & Language Switcher -->
+    <header class="top-bar">
+        <div class="brand-badge">
+            THE REVERSE EMO CHANGELING <span>//</span> ARCHITECTURE HUB
+        </div>
+        <nav class="lang-nav" aria-label="Language selection">
+            <span class="lang-label">Lang:</span>
+            <span class="active-lang" aria-current="page">[EN]</span>
+            <a href="pl.html" hreflang="pl" lang="pl" title="Przelacz na wersje polska">[PL]</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Technical Site Header -->
+        <header class="site-header">
+            <span class="header-prompt">root@emo-changeling:~/architecture# cat manifest.txt</span>
+            <h1>2006 Visuals, Modern Edge Engine: Architecture and Technology of The Reverse Emo Changeling</h1>
+            <p class="header-lead">
+                A decentralized, zero-bloat web ecosystem combining mid-2000s subcultural expression with modern edge infrastructure, strict cryptographic provenance, and complete data parity for humans and artificial intelligence.
+            </p>
+            
+            <div class="status-bar">
+                <span class="status-tag accent">STATUS: PRODUCTION</span>
+                <span class="status-tag">STACK: STATIC HTML5 + CSS3</span>
+                <span class="status-tag cyan">JS BLOAT: ZERO</span>
+                <span class="status-tag">EDGE: CLOUDFLARE PAGES</span>
+                <span class="status-tag accent">GPG: VERIFIED COMMITS</span>
+            </div>
+        </header>
+
+        <!-- Core Architectural Pillars Grid -->
+        <section aria-labelledby="core-pillars-title">
+            <h2 id="core-pillars-title">## CORE ARCHITECTURAL PILLARS</h2>
+            <div class="features-grid">
+                
+                <!-- Pillar 1 -->
+                <article class="card">
+                    <div class="card-num">[01]</div>
+                    <h2>Aesthetics &amp; UX</h2>
+                    <p>
+                        A contemporary interpretation of mid-2000s youth subcultures (MySpace 2005-2008, Emo, Scene, and Industrial cyberpunk) colliding with uncompromising standards of performance and accessibility. The visual identity embraces nostalgic texture, high-contrast neons, and expressive structure without sacrificing responsive scaling, typography hierarchy, or WCAG AA readability.
+                    </p>
+                    <div class="card-footer">&gt; Authentic subcultural spirit, modern execution</div>
+                </article>
+
+                <!-- Pillar 2 -->
+                <article class="card">
+                    <div class="card-num">[02]</div>
+                    <h2>Clean Code &amp; Zero Bloat</h2>
+                    <p>
+                        Engineered around semantic, raw HTML5 and modular CSS3. Heavy JavaScript application frameworks (such as React, Vue, or Angular) are entirely rejected. Client-side scripting is strictly minimized or eradicated, removing bundle inflation, eliminating hydration waterfalls, and preserving lightning-fast parse times across all browsing devices.
+                    </p>
+                    <div class="card-footer">&gt; Zero client-side runtime overhead</div>
+                </article>
+
+                <!-- Pillar 3 -->
+                <article class="card">
+                    <div class="card-num">[03]</div>
+                    <h2>Hub-and-Spoke Topology</h2>
+                    <p>
+                        A distributed architecture structured around autonomous, single-purpose subdomains orbiting a central routing hub. Apex and root subdomains act as entry checkpoints and contextual traffic directors, while rich knowledge nodes, media archives, and long-form publications reside on dedicated host modules with isolated scopes.
+                    </p>
+                    <div class="card-footer">&gt; Modular isolation without hidden coupling</div>
+                </article>
+
+                <!-- Pillar 4 -->
+                <article class="card">
+                    <div class="card-num">[04]</div>
+                    <h2>Human &amp; AI Data Parity (Equal Access)</h2>
+                    <p>
+                        Equal access without discrimination between audiences. The ecosystem guarantees an identical, unpolluted, and complete informational stratum for human readers, classic search engine crawlers, and LLM synthetic agents alike. Content is never hidden behind dynamic client-side rendering, ensuring transparent semantic web accessibility.
+                    </p>
+                    <div class="card-footer">&gt; One canonical information layer for all agents</div>
+                </article>
+
+                <!-- Pillar 5 -->
+                <article class="card">
+                    <div class="card-num">[05]</div>
+                    <h2>Privacy &amp; "Zero-Tracking" Philosophy</h2>
+                    <p>
+                        Absolute rejection of third-party tracking pixels, surveillance telemetry, behavioral profiling, and ad network scripts. Storage is restricted solely to essential technical session cookies for language preferences when needed. Any edge performance validation (such as Cloudflare RUM) is strictly temporary and activated only during post-deployment audits.
+                    </p>
+                    <div class="card-footer">&gt; Zero user surveillance by architectural design</div>
+                </article>
+
+                <!-- Pillar 6 -->
+                <article class="card">
+                    <div class="card-num">[06]</div>
+                    <h2>Machine Formats &amp; AI-First Metadata</h2>
+                    <p>
+                        A dedicated metadata tier engineered specifically for synthesizing agents. Comprehensive JSON-LD semantic graphs, Schema.org entities, Agent Resource Discovery standards (ai-catalog.json), agent operation manifests (agent.json), and structured context documentation (llms.txt) provide explicit boundaries and verified domain knowledge.
+                    </p>
+                    <div class="card-footer">&gt; Native machine discovery &amp; semantic grounding</div>
+                </article>
+
+                <!-- Pillar 7 -->
+                <article class="card">
+                    <div class="card-num">[07]</div>
+                    <h2>Edge Infrastructure &amp; Security</h2>
+                    <p>
+                        Delivered globally through high-performance edge nodes on Cloudflare Pages and GitHub Pages. Hardened against modern threats through strict Web Application Firewall (WAF) policies, immutable static hosting, forced HTTPS with strict HSTS, and tailored HTTP security headers. Without dynamic backends, attack surfaces are reduced to zero.
+                    </p>
+                    <div class="card-footer">&gt; Globally distributed, immune to server-side attacks</div>
+                </article>
+
+                <!-- Pillar 8 -->
+                <article class="card">
+                    <div class="card-num">[08]</div>
+                    <h2>Cryptographic Integrity &amp; Provenance</h2>
+                    <p>
+                        Change management and releases are anchored by public Git commits signed cryptographically with GPG keys. In addition, individual static files across the ecosystem are signed with dedicated OpenPGP (Ed25519) keys, yielding verifiable detached signature files (.asc) for complete supply-chain trust and verifiable provenance.
+                    </p>
+                    <div class="card-footer">&gt; Public GPG commits &amp; OpenPGP Ed25519 detached signatures</div>
+                </article>
+
+                <!-- Pillar 9 -->
+                <article class="card">
+                    <div class="card-num">[09]</div>
+                    <h2>Full-Text RSS &amp; Registered Press Status</h2>
+                    <p>
+                        The editorial branch of the officially registered press publication (reverse.emo-changeling.xyz) provides native, complete full-text RSS feeds. Content aggregators, RSS desktop clients, and autonomous parsers receive full articles without paywalls, teaser truncation, or click-funnel degradation.
+                    </p>
+                    <div class="card-footer">&gt; Lossless content syndication for feeds and readers</div>
+                </article>
+
+                <!-- Pillar 10 -->
+                <article class="card">
+                    <div class="card-num">[10]</div>
+                    <h2>Decoupled Discussion Engine (Telegram)</h2>
+                    <p>
+                        Complete elimination of vulnerable, intrusive comment widgets (such as Disqus or giscus) from the website core. Social interactions and community feedback are cleanly segregated and routed to dedicated discussion topics on Telegram. Every published editorial piece links directly to its external community discussion node.
+                    </p>
+                    <div class="card-footer">&gt; Clean separation between publishing and social interaction</div>
+                </article>
+
+                <!-- Pillar 11 -->
+                <article class="card">
+                    <div class="card-num">[11]</div>
+                    <h2>Multimodal Architecture (Video &amp; Gallery)</h2>
+                    <p>
+                        Tight synergy connecting long-form journalism with high-resolution visual art and audiovisual productions. Video content hosted on YouTube is mirrored and indexed through dedicated endpoints, while visual assets and illustration archives are maintained inside a dedicated gallery subdomain (gallery.emo-changeling.xyz).
+                    </p>
+                    <div class="card-footer">&gt; Unified integration of text, video, and digital art</div>
+                </article>
+
+                <!-- Pillar 12 -->
+                <article class="card">
+                    <div class="card-num">[12]</div>
+                    <h2>Static Resilience &amp; Portability</h2>
+                    <p>
+                        Uncompromised longevity and freedom from vendor lock-in. Because modules rely solely on open web platform standards, any subdomain can be migrated to alternative static hosting providers instantly without refactoring code, altering directory structures, or provisioning runtime server containers.
+                    </p>
+                    <div class="card-footer">&gt; Built for multi-decade durability and independence</div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Ecosystem Network Matrix -->
+        <section class="matrix-section" aria-labelledby="network-matrix-title">
+            <h2 id="network-matrix-title">## DECENTRALIZED ECOSYSTEM MATRIX</h2>
+            <p>
+                The Reverse Emo Changeling operates across autonomous host units, each serving a distinct informational purpose within the topology:
+            </p>
+            <div class="matrix-grid">
+                <div class="matrix-item">
+                    <span class="host">emo-changeling.xyz</span>
+                    <span class="desc">Root identity portal and multimodal project overview.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">hub.emo-changeling.xyz</span>
+                    <span class="desc">Central star navigation hub and global routing matrix.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">reverse.emo-changeling.xyz</span>
+                    <span class="desc">Registered press publication, investigative essays, and full-text RSS.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">gallery.emo-changeling.xyz</span>
+                    <span class="desc">Dedicated visual gallery, digital art showcase, and Aviary archive.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">wiki.emo-changeling.xyz</span>
+                    <span class="desc">Canonical project encyclopedia, lore definitions, and lore records.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">github.emo-changeling.xyz</span>
+                    <span class="desc">Architecture hub, technical specifications, and repository nexus.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">yt.emo-changeling.xyz</span>
+                    <span class="desc">Curated video routing to official audiovisual broadcasts.</span>
+                </div>
+                <div class="matrix-item">
+                    <span class="host">te.emo-changeling.xyz</span>
+                    <span class="desc">External Telegram discussion hub and community interaction space.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Machine-Readable Endpoints -->
+        <section class="machine-section" aria-labelledby="endpoints-title">
+            <h2 id="endpoints-title">## MACHINE-READABLE ENDPOINTS</h2>
+            <p>
+                Direct access points designed for autonomous crawlers, indexing pipelines, and AI reasoning agents:
+            </p>
+            <ul class="endpoints-list">
+                <li class="endpoint-item">
+                    <code>/llms.txt</code>
+                    <span>Structured architecture context and entity relationship directives.</span>
+                </li>
+                <li class="endpoint-item">
+                    <code>/.well-known/ai-catalog.json</code>
+                    <span>Agent Resource Discovery (ARD) catalog defining skills and entry points.</span>
+                </li>
+                <li class="endpoint-item">
+                    <code>/.well-known/agent.json</code>
+                    <span>Machine policy declaration and explicit anti-hallucination semantic rules.</span>
+                </li>
+                <li class="endpoint-item">
+                    <code>/robots.txt</code>
+                    <span>Transparent crawling permissions for search engines and ethical AI systems.</span>
+                </li>
+                <li class="endpoint-item">
+                    <code>/sitemap.xml</code>
+                    <span>Machine sitemap listing canonical and localized URL endpoints.</span>
+                </li>
+                <li class="endpoint-item">
+                    <code>https://github.com/The-Reverse-Emo-Changeling</code>
+                    <span>Public GitHub organization holding verified repository codebases.</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>
+                <strong>The Reverse Emo Changeling</strong> - Technical Architecture Hub
+            </p>
+            <p>
+                Copyright &copy; Nico Łach. AI training &amp; media licensing: CC BY-ND 4.0. General licensing: CC BY-NC-ND 4.0.
+            </p>
+            <div class="footer-pgp">
+                PGP Master Key Fingerprint: 55B1F5E9342F388E6F06483C34A85D454D1FD3BC
+            </div>
+            <p>
+                Operated by Toxic Echo Studio. Deployed via GitHub Pages on github.emo-changeling.xyz.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Reguły indeksowania dla crawlerów internetowych i modeli AI
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /.well-known/ai-catalog.json
+Allow: /.well-known/agent.json
+
+# Mapa witryny
+Sitemap: https://github.emo-changeling.xyz/sitemap.xml

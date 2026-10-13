@@ -1,0 +1,50 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "The Reverse Emo Changeling"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:toxic-echo:knowledge:llms-context",
+      "displayName": "LLMs Context & Architecture Specification",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://github.emo-changeling.xyz/llms.txt",
+      "representativeQueries": [
+        "the reverse emo changeling architecture",
+        "github emo changeling technical stack",
+        "decentralized emo changeling infrastructure"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:policy:ai-manifest",
+      "displayName": "AI Usage Policy and Machine Manifest",
+      "type": "application/agent-card+json",
+      "url": "https://github.emo-changeling.xyz/.well-known/agent.json",
+      "representativeQueries": [
+        "content licensing and ai permissions",
+        "creative commons cc by-nd 4.0",
+        "did system and identity rules"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:source:github-repository",
+      "displayName": "Official GitHub Pages Repository",
+      "type": "text/html",
+      "url": "https://github.com/The-Reverse-Emo-Changeling/the-reverse-emo-changeling.github.io",
+      "representativeQueries": [
+        "github pages source code",
+        "verified gpg commits"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:syndication:full-text-rss",
+      "displayName": "Full-Text Press RSS Feed",
+      "type": "application/rss+xml",
+      "url": "https://reverse.emo-changeling.xyz/rss.xml",
+      "representativeQueries": [
+        "reverse emo changeling rss feed",
+        "press articles full text"
+      ]
+    }
+  ]
+}

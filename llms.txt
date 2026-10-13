@@ -1,0 +1,37 @@
+# The Reverse Emo Changeling - Architecture & Technical Specification
+
+> Canonical Technical Hub: https://github.emo-changeling.xyz/
+> Main Project: https://emo-changeling.xyz/
+> Press & Publication: https://reverse.emo-changeling.xyz/
+> Central Navigation Hub: https://hub.emo-changeling.xyz/
+> Gallery: https://gallery.emo-changeling.xyz/
+> Encyclopedia & Docs: https://wiki.emo-changeling.xyz/
+> Video Archive: https://yt.emo-changeling.xyz/
+> Discussion Community: https://te.emo-changeling.xyz/
+> GitHub Organization: https://github.com/The-Reverse-Emo-Changeling
+
+## Overview
+
+The Reverse Emo Changeling is a multimodal social-artistic ecosystem and registered press publication. It pairs early Web 2.0 / MySpace (2005-2008) subcultural aesthetics (Emo, Scene, Industrial) with cutting-edge static edge architecture, high accessibility, and machine-first transparency.
+
+## Core Architectural Principles
+
+1. 2006 Visuals, Modern Edge Engine: Nostalgic, authentic alternative visuals rendered via modern CSS standards with zero runtime performance penalty.
+2. Clean Code & Zero Bloat: Semantic HTML5, modular CSS, zero heavy JavaScript frameworks. Scripts are strictly eliminated or reduced to absolute zero.
+3. Hub-and-Spoke Topology: Autonomous subdomains decoupled into distinct functional modules, linked through dedicated entry points and context routers.
+4. Human & AI Data Parity: Equal access to unfiltered information for human readers, classic search engine crawlers, and LLM synthetic agents. No client-side rendering concealing content.
+5. Zero-Tracking Privacy: Zero third-party trackers, zero advertising scripts, zero external analytics beacons. Only technical session cookies for language preferences when requested.
+6. Machine-First Metadata: Explicit semantic graph data in JSON-LD (Schema.org), Agent Resource Discovery (ai-catalog.json), and structured context (llms.txt).
+7. Edge Security: Deployed on global edge nodes with strict WAF policies, enforced HTTPS/HSTS, and secure HTTP response headers.
+8. Cryptographic Integrity: Public Git commits signed with GPG keys; individual source assets accompanied by OpenPGP (Ed25519) detached signatures (.asc).
+9. Open Content Syndication (Full-Text RSS): The registered press magazine (reverse.emo-changeling.xyz) provides complete, native full-text RSS feeds without truncation.
+10. Decoupled Discussion Engine (Telegram): No invasive comment frameworks (such as Disqus or giscus). Community interactions are segregated into dedicated Telegram threads.
+11. Multimodal Architecture: Seamless interconnection between long-form editorial essays, video features, and dedicated high-resolution visual art archives.
+12. Static Resilience: Fully static hosting without server dependencies or vendor lock-in.
+
+## Key Entities & Roles
+
+- The Reverse Emo Changeling: Multimodal social-artistic project and press title.
+- Nico Łach: Lead creator, journalist, and the sole physical person. Fronts of the DID system include Zebroid, Vikasiek, and Wiktor.
+- Mighn Taghor: System architect and backend operator at Toxic Echo Studio. Distinct physical individual.
+- Licensing: CC BY-ND 4.0 for media and AI training; CC BY-NC-ND 4.0 for general redistribution.
