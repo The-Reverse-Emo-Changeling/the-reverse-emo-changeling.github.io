@@ -1,11 +1,87 @@
-# Systemowe i lokalne pliki deweloperskie
-/.vs
-/.vscode/
-/.agents/
-/__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Środowisko
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# IDE i narzędzia
+.vscode/
+.idea/
+.agents/
+.gemini/
+
+# Systemowe
 .DS_Store
 Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Zależności i paczki
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Wrażliwe dane i certyfikaty
+*.pem
+*.key
+*.cert
+*.crt
+*secret*
+
+# Tymczasowe
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
 .aider*
+
+# ==============================================================================
+# Standard Bezpieczenstwa i Kompatybilnosci ANTYGRAVITY (Linux <-> Windows)
+# ==============================================================================
+# SEKRETY I PLIKI POSWIADCZEN
+credentials.json
+client_secret*.json
+secrets.json
+*.cer
+*.p12
+*.pfx
+*id_rsa*
+*id_dsa*
+*id_ecdsa*
+*id_ed25519*
+.netrc
+.pgpass
+
+# NARZEDZIA AI I REGULY AGENTA
+AGENTS.md
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v*
+backup/
+sensitive_gemini_backup/
+temp_*/
+
+# ARTEFAKTY WINDOWS
+$RECYCLE.BIN/
+*.lnk
+
+# ARTEFAKTY LINUX I MACOS
+.AppleDouble
+.LSOverride
+*.swo
+
+# PYTHON, PAMIEC PODRECZNA I SRODOWISKA WIRTUALNE
+ENV/
+.pytest_cache/
+.mypy_cache/
+
+# PLIKI TYMCZASOWE I LOGI
+*.orig
+*.pid
+
